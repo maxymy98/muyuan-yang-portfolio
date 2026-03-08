@@ -197,7 +197,7 @@ section h2 {
 }
 
 .league-links a::before {
-    content: "⚽";
+    content: "🏀";
     margin-right: 0.5rem;
 }
 
