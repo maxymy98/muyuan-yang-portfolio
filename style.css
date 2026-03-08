@@ -146,47 +146,59 @@ section h2 {
 }
 
 /* Projects */
-.project-grid {
+.interest-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
 }
 
-.project-card {
+.interest-card {
     background: var(--card-bg);
     padding: 2rem;
     border-radius: 12px;
     transition: var(--transition);
 }
 
-.project-card:hover {
+.interest-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
-.project-card h3 {
+.interest-card h3 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
     color: var(--text-color);
 }
 
-.project-card p {
+.interest-card p {
     color: var(--text-muted);
     margin-bottom: 1.5rem;
 }
 
-.tech-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
+.league-links {
+    list-style: none;
 }
 
-.tech-tags span {
-    background: rgba(59, 130, 246, 0.2);
+.league-links li {
+    margin-bottom: 0.75rem;
+}
+
+.league-links a {
     color: var(--accent);
-    padding: 0.25rem 0.75rem;
-    border-radius: 20px;
-    font-size: 0.875rem;
+    text-decoration: none;
+    transition: var(--transition);
+    display: inline-flex;
+    align-items: center;
+}
+
+.league-links a:hover {
+    color: var(--text-color);
+    transform: translateX(5px);
+}
+
+.league-links a::before {
+    content: "⚽";
+    margin-right: 0.5rem;
 }
 
 /* Contact */
